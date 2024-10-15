@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./scss/main.scss">
+  <link rel="shortcut icon" href="./icons//logo.png">
   <title>Mimos da BI</title>
 </head>
 
@@ -12,52 +13,57 @@
   <header>
     <nav class="navbar navbar-expand-lg bg-black px-5 py-3 d-flex justify-content-between align-items-center">
       <div class="form">
-          <form class="d-flex" role="search">
-              <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn bg-white p-2"><img src="./icons/search.png" alt="Buscar item"></button>
-          </form>
+        <form class="d-flex" role="search">
+          <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn bg-white p-2"><img src="./icons/search.png" alt="Buscar item"></button>
+        </form>
       </div>
       <div class="logo-container">
-          <img id="main-logo" src="./images/logo 4.png" alt="Logomarca Mimos da BI">
+        <img id="main-logo" src="./images/logo 4.png" alt="Logomarca Mimos da BI">
       </div>
       <div class="whatsapp-header">
-          <img id="whatsapp-header" src="./icons/whatsapp.png" alt="Logomarca Mimos da BI">
+        <img id="whatsapp-header" src="./icons/whatsapp.png" alt="Logomarca Mimos da BI">
       </div>
-  </nav>
+    </nav>
 
-  <nav class="itens-list">
-    <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-      <img id="hamburger" src="./icons/hamb.png" alt="Expandir categorias">
-    </a>
-    <div class="collapse" id="collapseExample">
-      <div class="itens">
-        <ul>
-          <li><a href="#">Brincos</a></li>
-          <li><a href="#">Braceletes</a></li>
-          <li><a href="#">Colares</a></li>
-          <li><a href="#">Anéis</a></li>
-          <li><a href="#">Pulseiras</a></li>
-        </ul>
+    <nav class="itens-list">
+      <a class="hamb" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+        aria-controls="collapseExample">
+        <img id="hamburger" src="https://www.svgrepo.com/show/493683/hamburger-2-menu-mobile.svg"
+          alt="Expandir categorias">
+      </a>
+      <div class="collapse" id="collapseExample">
+        <div class="itens">
+          <ul>
+            <li><a href="#">Brincos</a></li>
+            <li><a href="#">Braceletes</a></li>
+            <li><a href="#">Colares</a></li>
+            <li><a href="#">Anéis</a></li>
+            <li><a href="#">Pulseiras</a></li>
+            <li><a href="#">Tornozeleiras</a></li>
+            <li><a href="#">Piercing</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  
+    </nav>
+
   </header>
   <main>
     <div id="carouselExampleDark" class="carousel carousel-dark carousel-fade slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="5000">
+        <div class="carousel-item active" data-bs-interval="1000">
           <img src="./images/0052.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <p>Seu estilo, nossas jóias</p>
           </div>
         </div>
-        <div class="carousel-item" data-bs-interval="5000">
+        <div class="carousel-item" data-bs-interval="3000">
           <img src="./images/0266.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <p>Mais do que um produto: um momento</p>
@@ -73,9 +79,68 @@
     </div>
 
 
+    <div class="instagram p-4">
+      <h2>Nossas categorias</h2>
+      <div class="categorias">
+        <ul>
+          <li><img src="./images/1015.jpg" alt=""><a href="">Anéis</a></li>
+          <li><img src="./images/0037.jpg" alt=""><a href="">Braceletes</a></li>
+          <li><img src="./images/0325.jpg" alt=""><a href="">Brincos</a></li>
+          <li><img src="./images/0106.jpg" alt=""><a href="">Colares</a></li>
+          <li><img src="./images//0004.jpg" alt=""><a href="">Pulseiras</a></li>
+          <li><img src="./images/0353.jpg" alt=""><a href="">Tornozeleiras</a></li>
+          <li><img src="./images/0266.jpg" alt=""><a href="">Piercing</a></li>
+        </ul>
+      </div>
+    </div>
 
+    <div class="social-media">
+      <a href="#"><img src="https://www.svgrepo.com/show/506671/pinterest.svg" alt=""></a>
+      <a href=""> <img src="https://www.svgrepo.com/show/520798/instagram.svg" alt=""></a>
+    </div>
 
   </main>
+  <footer>
+    <div class="footer p-4">
+      <h2>Entre em contato</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
+          <input type="hidden" name="accessKey" value="c67664ac-ad67-4e08-b3b8-29b4d40d95b7">
+          <input type="hidden" name="subject" value="NOVO LEAD">
+          <input type="hidden" name="redirectTo" value="google.com">
+          <div class="field">
+            <label class="label">Seu nome:</label>
+            <div class="control">
+              <input class="input" type="text" name="name" placeholder="Informe seu nome" required>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Email:</label>
+            <div class="control">
+              <input class="input" type="email" name="email" placeholder="Seu melhor e-mail" required>
+            </div>
+          <div class="field">
+              <label class="label">Seu endereço completo: </label>
+              <div class="control">
+                <input class="input" type="text" name="name" placeholder="Seu melhor endereço" required>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Nº de telefone: </label>
+            <div class="control">
+              <input class="input" type="text" name="name" placeholder="Seu melhor número" required>
+            </div>
+        </div>
+          <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+              <textarea class="textarea" name="message" placeholder="Escreva sua mensagem" rows="5" cols="30" required></textarea>
+            </div>
+          </div>
+          <button class="button is-primary" type="Submit">Submit</button>
+        </form>
+    </div>
+    </footer>
   <script type="module" src="./js/main.js"></script>
 </body>
 
