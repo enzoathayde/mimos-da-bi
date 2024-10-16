@@ -102,45 +102,39 @@
   </main>
   <footer>
     <div class="footer p-4">
-      <h2>Entre em contato</h2>
-        <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
+      <h2>Sugestões ? <br> Dúvidas ? <br> Nos envie uma mensagem.. </h2>
+
+      <!-- <form method="post" id="staticform">
           <input type="hidden" name="accessKey" value="c67664ac-ad67-4e08-b3b8-29b4d40d95b7">
           <input type="hidden" name="subject" value="NOVO LEAD">
-          <input type="hidden" name="redirectTo" value="google.com">
-          <div class="field">
-            <label class="label">Seu nome:</label>
-            <div class="control">
-              <input class="input" type="text" name="name" placeholder="Informe seu nome" required>
-            </div>
-          </div>
-          <div class="field">
-            <label class="label">Email:</label>
-            <div class="control">
-              <input class="input" type="email" name="email" placeholder="Seu melhor e-mail" required>
-            </div>
-          <div class="field">
-              <label class="label">Seu endereço completo: </label>
-              <div class="control">
-                <input class="input" type="text" name="name" placeholder="Seu melhor endereço" required>
-              </div>
-            </div>
-          </div>
-          <div class="field">
-            <label class="label">Nº de telefone: </label>
-            <div class="control">
-              <input class="input" type="text" name="name" placeholder="Seu melhor número" required>
-            </div>
-        </div>
-          <div class="field">
-            <label class="label">Message</label>
-            <div class="control">
-              <textarea class="textarea" name="message" placeholder="Escreva sua mensagem" rows="5" cols="30" required></textarea>
-            </div>
-          </div>
-          <button class="button is-primary" type="Submit">Submit</button>
-        </form>
+            <input type="hidden" name="redirectTo" value="https://www.google.com"> -->
+      <form action="" method="POST" name="leads" id="lead">
+        <label class="label" for="name">Seu nome:</label>
+        <input class="input" type="text" name="name" placeholder="Informe seu nome" required>
+        <label class="label" for="email">Email:</label>
+        <input class="input" type="email" name="email" placeholder="Seu melhor e-mail" required>
+        <label class="label" for="cep">CEP:</label>
+        <input class="input" type="text" name="cep" placeholder="00000-000" required>
+        <label class="label" for="street">Rua: </label>
+        <input class="input" type="text" name="street" placeholder="Rua" required>
+        <label class="label" for="neighborhood">Bairro: </label>
+        <input class="input" type="text" name="neighborhood" placeholder="Bairro" required>
+        <label class="label" for="city">Cidade: </label>
+        <input class="input" type="text" name="city" placeholder="Cidade" required>
+        <label class="label" for="state">Estado: </label>
+        <input class="input" type="text" name="state" placeholder="Estado" required>
+        <label class="label" for="phone"> Nº de telefone: </label>
+        <input class="input" type="text" name="phone" placeholder="Seu melhor número" required>
+        <label class="label" for="message">Escreve sua mensagem: </label>
+        <textarea class="textarea" name="message" placeholder="Escreva sua mensagem" rows="5" cols="38"
+          required></textarea>
+        <input type="submit" name="submit" id="submit">
+      </form>
     </div>
-    </footer>
+    <div class="criador">
+      <h5>Mimos da BI © 2024 - Criado por <a href="https://www.linkedin.com/in/3at2001/" about="_blank">Enzo Athayde</a> </h5>
+    </div>
+  </footer>
   <script type="module" src="./js/main.js"></script>
 </body>
 

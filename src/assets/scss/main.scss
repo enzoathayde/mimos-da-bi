@@ -143,5 +143,20 @@ button.btn {
   align-items: flex-start;
   flex-direction: column;
   gap: 10px;
-  padding: 0 70px;
+  padding: 20px 70px;
+}
+
+.footer input {
+  width: 300px;
+}
+
+.criador {
+  background-color: black;
+  text-align: center;
+  padding: 20px;
+}
+
+.criador a {
+  text-decoration: none;
+  color: white;
 }
