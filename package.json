@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "source": "./src/assets/index.html",
   "dependencies": {
-    "bootstrap": "^5.3.3",
-    "bootstrap-icons": "^1.11.3"
+    "bootstrap": "^5.3.3"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.12.0",

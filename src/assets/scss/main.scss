@@ -1,9 +1,31 @@
 @import 'bootstrap/scss/bootstrap.scss';
 @import '_variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+a {
+  text-decoration: 0;
+  color: black;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.navbar {
+  position: sticky;
+}
 
 .navbar input {
-  width: 130px;
+  width: 250px;
 }
 
 input.form-control,
@@ -19,10 +41,12 @@ button.btn {
 #main-logo {
   width: 80px;
   height: auto;
+  margin: 0 23vw;
 }
 
 #whatsapp-header {
   width: 40px;
+  margin-left: 15vw;
 }
 
 .itens-list {
@@ -33,19 +57,14 @@ button.btn {
   padding: 20px 30px;
 }
 
-
-.itens ul {
+.itens { ul {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 30px;
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.itens a {
-  text-decoration: none;
-  color: black;
+  }
 }
 
 #carouselExampleDark {
@@ -63,7 +82,7 @@ button.btn {
 
 .carousel-caption {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -76,7 +95,6 @@ button.btn {
   padding: 50px;
   border-radius: 5px;
 }
-
 
 #hamburger {
   width: 30px;
@@ -129,13 +147,16 @@ button.btn {
   background-color: white;
 }
 
-.footer {
+footer {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  gap: 500px;
-  align-items: center;
-  padding: 30px;
+}
+
+.footer {
+  display: grid;
+  padding: 10vw;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 170px;
 }
 
 .footer form {
@@ -143,7 +164,6 @@ button.btn {
   align-items: flex-start;
   flex-direction: column;
   gap: 10px;
-  padding: 20px 70px;
 }
 
 .footer input {
@@ -151,6 +171,7 @@ button.btn {
 }
 
 .criador {
+  float: left;
   background-color: black;
   text-align: center;
   padding: 20px;

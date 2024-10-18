@@ -11,7 +11,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg bg-black px-5 py-3 d-flex justify-content-between align-items-center">
+    <nav class="navbar navbar-expand-lg bg-black px-5 py-3 d-flex align-items-center">
       <div class="form">
         <form class="d-flex" role="search">
           <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
@@ -26,7 +26,7 @@
       </div>
     </nav>
 
-    <nav class="itens-list">
+    <nav class="itens-list bg-white">
       <a class="hamb" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
         aria-controls="collapseExample">
         <img id="hamburger" src="https://www.svgrepo.com/show/493683/hamburger-2-menu-mobile.svg"
@@ -101,38 +101,30 @@
 
   </main>
   <footer>
-    <div class="footer p-4">
-      <h2>Sugestões ? <br> Dúvidas ? <br> Nos envie uma mensagem.. </h2>
-
-      <!-- <form method="post" id="staticform">
-          <input type="hidden" name="accessKey" value="c67664ac-ad67-4e08-b3b8-29b4d40d95b7">
-          <input type="hidden" name="subject" value="NOVO LEAD">
-            <input type="hidden" name="redirectTo" value="https://www.google.com"> -->
+    <div class="footer">
+      <h2>Sugestões ? <br> Dúvidas ? <br> Nos envie uma mensagem...</h2>
       <form action="" method="POST" name="leads" id="lead">
         <label class="label" for="name">Seu nome:</label>
-        <input class="input" type="text" name="name" placeholder="Informe seu nome" required>
+        <input class="input" type="text" name="name" placeholder="Informe seu nome" autocomplete="off" required>
         <label class="label" for="email">Email:</label>
-        <input class="input" type="email" name="email" placeholder="Seu melhor e-mail" required>
+        <input class="input" type="email" name="email" placeholder="Seu melhor e-mail" autocomplete="off" required>
         <label class="label" for="cep">CEP:</label>
-        <input class="input" type="text" name="cep" placeholder="00000-000" required>
+        <input class="input" id="cep" type="text" name="cep" placeholder="00000-000" autocomplete="off" required>
         <label class="label" for="street">Rua: </label>
-        <input class="input" type="text" name="street" placeholder="Rua" required>
+        <input class="input" type="text" name="street" placeholder="Rua" autocomplete="off" required>
         <label class="label" for="neighborhood">Bairro: </label>
-        <input class="input" type="text" name="neighborhood" placeholder="Bairro" required>
+        <input class="input" type="text" name="neighborhood" placeholder="Bairro" autocomplete="off" required>
         <label class="label" for="city">Cidade: </label>
-        <input class="input" type="text" name="city" placeholder="Cidade" required>
+        <input class="input" type="text" name="city" placeholder="Cidade" autocomplete="off" required>
         <label class="label" for="state">Estado: </label>
-        <input class="input" type="text" name="state" placeholder="Estado" required>
+        <input class="input" type="text" name="state" autocomplete="off" placeholder="Estado" required>
         <label class="label" for="phone"> Nº de telefone: </label>
-        <input class="input" type="text" name="phone" placeholder="Seu melhor número" required>
+        <input class="input" type="text" name="phone" placeholder="Seu melhor número" autocomplete="off" required>
         <label class="label" for="message">Escreve sua mensagem: </label>
         <textarea class="textarea" name="message" placeholder="Escreva sua mensagem" rows="5" cols="38"
-          required></textarea>
+        ></textarea>
         <input type="submit" name="submit" id="submit">
       </form>
-    </div>
-    <div class="criador">
-      <h5>Mimos da BI © 2024 - Criado por <a href="https://www.linkedin.com/in/3at2001/" about="_blank">Enzo Athayde</a> </h5>
     </div>
   </footer>
   <script type="module" src="./js/main.js"></script>
