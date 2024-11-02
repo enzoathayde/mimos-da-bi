@@ -181,3 +181,13 @@ footer {
   text-decoration: none;
   color: white;
 }
+
+.main-sobre {
+  color: white;
+  background: black;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 7px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./scss/main.scss">
+  <link rel="shortcut icon" href="./icons/logo.png">
+  <title>Mimos da BI</title>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-black px-5 py-3 d-flex align-items-center">
+      <div class="form">
+        <form class="d-flex" role="search">
+          <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn bg-white p-2"><img src="./icons/search.png" alt="Buscar item"></button>
+        </form>
+      </div>
+      <div class="logo-container">
+       <a href="index.html"><img id="main-logo" src="./images/logo 4.png" alt="Logomarca Mimos da BI"></a>
+      </div>
+      <div class="whatsapp-header">
+        <img id="whatsapp-header" src="./icons/whatsapp.png" alt="Logomarca Mimos da BI">
+      </div>
+    </nav>
+  </header>
+  <br>
+  <br>
+  <br>
+  <br>
+  <main class="main-sobre">
+    <h2> Sobre nós </h2>
+    <p>A Mimos da Bi é uma loja de joias criada com carinho e dedicação, valorizando o toque familiar em cada detalhe.
+      Nossa missão é oferecer peças que representem momentos especiais, com qualidade e estilo que encantam. Cada joia é
+      escolhida e desenvolvida com atenção, pensando em realçar a beleza e o brilho únicos de cada cliente. Nossa
+      história é construída com laços familiares e o desejo de proporcionar produtos que emocionem e acompanhem cada
+      fase da vida. Na Mimos da Bi, você encontra mais do que joias — encontra memórias para eternizar.</p>
+  </main>
+
+
+  <footer>
+    <div class="footer">
+      <h2>Sugestões ? <br> Dúvidas ? <br> Nos envie uma mensagem...</h2>
+      <form action="" method="POST" name="leads" id="lead">
+        <label class="label" for="name">Seu nome:</label>
+        <input class="input" type="text" name="name" placeholder="Informe seu nome" autocomplete="off" required>
+        <label class="label" for="email">Email:</label>
+        <input class="input" type="email" name="email" placeholder="Seu melhor e-mail" autocomplete="off" required>
+        <label class="label" for="cep">CEP:</label>
+        <input class="input" id="cep" type="text" name="cep" placeholder="00000-000" autocomplete="off" required>
+        <label class="label" for="street">Rua: </label>
+        <input class="input" type="text" name="street" placeholder="Rua" autocomplete="off" required>
+        <label class="label" for="neighborhood">Bairro: </label>
+        <input class="input" type="text" name="neighborhood" placeholder="Bairro" autocomplete="off" required>
+        <label class="label" for="city">Cidade: </label>
+        <input class="input" type="text" name="city" placeholder="Cidade" autocomplete="off" required>
+        <label class="label" for="state">Estado: </label>
+        <input class="input" type="text" name="state" autocomplete="off" placeholder="Estado" required>
+        <label class="label" for="phone"> Nº de telefone: </label>
+        <input class="input" type="text" name="phone" placeholder="Seu melhor número" autocomplete="off" required>
+        <label class="label" for="message">Escreve sua mensagem: </label>
+        <textarea class="textarea" name="message" placeholder="Escreva sua mensagem" rows="5" cols="38"></textarea>
+        <input type="submit" name="submit" id="submit">
+      </form>
+    </div>
+  </footer>
+</body>
