@@ -22,6 +22,8 @@ header {
 
 .navbar {
   position: sticky;
+  justify-content: space-between;
+  display: flex;
 }
 
 .navbar input {
@@ -41,19 +43,17 @@ button.btn {
 #main-logo {
   width: 80px;
   height: auto;
-  margin: 0 23vw;
 }
 
 #whatsapp-header {
   width: 40px;
-  margin-left: 15vw;
 }
 
 .itens-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding: 20px 30px;
 }
 
@@ -184,10 +184,94 @@ footer {
 
 .main-sobre {
   color: white;
-  background: black;
+  background: #777;
   padding: 100px;
   display: flex;
   flex-direction: column;
   gap: 30px;
   border-radius: 7px;
+  padding: 70px;
+}
+
+
+.produtos {
+  display: flex;
+  flex-direction: column;
+  padding: 70px; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 70px;
+  background: #ccc;
+}
+
+/* Cartão de produto */
+.product-card {
+  width: 60vw;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction:  row;
+  text-align: start;
+  align-items: center;
+  transition: transform 0.2s ease;
+  gap: 50px;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+/* Imagem do produto */
+.product-image {
+  width: 100%; /* Para ocupar toda a largura do cartão */
+  height: 350px; /* Altura padronizada */
+  object-fit: cover; /* Corta as bordas excedentes para ajustar a proporção */
+  border-radius: 8px; /* (Opcional) Para cantos arredondados */
+}
+
+/* Informações do produto */
+.product-info {
+  padding: 16px;
+  display: flex ;
+  flex-direction: column;
+}
+
+.product-title {
+  font-size: 16px;
+  margin: 0 0 8px;
+  color: #333;
+}
+
+.product-description {
+  font-size: 14px;
+  color: #777;
+  margin: 0 0 8px;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #28a745;
+  margin: 0 0 16px;
+}
+
+/* Botão de comprar */
+.buy-button {
+  background: #000;
+  color: #fff;
+  border: none;
+  margin-top: 20px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 140px;
+  transition: background 0.3s ease;
+}
+
+
+
+.buy-button a {
+  color: #fff;
 }
