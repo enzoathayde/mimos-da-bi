@@ -1,0 +1,22 @@
+.container-sugestions {
+  display: flex;
+  justify-content: center;
+}
+
+.content-sugestions {
+  display: grid;
+  padding: 10vw;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 170px;
+}
+
+.content-sugestions form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content-sugestions input {
+  width: 300px;
+}

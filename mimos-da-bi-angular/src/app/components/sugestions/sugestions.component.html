@@ -1,0 +1,102 @@
+<div class="container-sugestions">
+  <div class="content-sugestions">
+    <h2>
+      Sugestões ? <br />
+      Dúvidas ? <br />
+      Nos envie uma mensagem...
+    </h2>
+    <form (ngSubmit)="submit()" class="add-cake-form">
+      <label class="label" for="name">Seu nome:</label>
+      <input
+        [(ngModel)]="newSugestion.name"
+        name="name"
+        class="input"
+        type="text"
+        placeholder="Informe seu nome"
+        autocomplete="off"
+        required
+      />
+      <label class="label" for="email">Email:</label>
+      <input
+        [(ngModel)]="newSugestion.email"
+        name="email"
+        class="input"
+        type="email"
+        placeholder="Seu melhor e-mail"
+        autocomplete="off"
+        required
+      />
+      <label class="label" for="cep">CEP:</label>
+      <input
+        [(ngModel)]="newSugestion.cep"
+        name="cep"
+        class="input"
+        id="cep"
+        type="text"
+        placeholder="00000-000"
+        autocomplete="off"
+        required
+      />
+      <label class="label" for="street">Rua: </label>
+      <input
+        [(ngModel)]="newSugestion.street"
+        name="street"
+        class="input"
+        type="text"
+        placeholder="Rua"
+        autocomplete="off"
+        required
+      />
+      <label class="label" for="neighborhood">Bairro: </label>
+      <input
+        [(ngModel)]="newSugestion.neighborhood"
+        name="neighborhood"
+        class="input"
+        type="text"
+        placeholder="Bairro"
+        autocomplete="off"
+        required
+      />
+      <label class="label" for="city">Cidade: </label>
+      <input
+        [(ngModel)]="newSugestion.city"
+        name="city"
+        class="input"
+        type="text"
+        placeholder="Cidade"
+        autocomplete="off"
+        required
+      />
+      <label class="label" for="state">Estado: </label>
+      <input
+        [(ngModel)]="newSugestion.state"
+        name="state"
+        class="input"
+        type="text"
+        autocomplete="off"
+        placeholder="Estado"
+        required
+      />
+      <label class="label" for="phone"> Nº de telefone: </label>
+      <input
+        [(ngModel)]="newSugestion.phone"
+        name="phone"
+        class="input"
+        type="text"
+        placeholder="Seu melhor número"
+        autocomplete="off"
+        required
+      />
+      <label class="label" for="message">Escreva sua mensagem: </label>
+      <textarea
+        [(ngModel)]="newSugestion.message"
+        name="message"
+        class="textarea"
+        placeholder="Escreva sua mensagem"
+        rows="5"
+        cols="38"
+      ></textarea>
+      <input type="submit" name="submit" value="Enviar" />
+    </form>
+  </div>
+</div>
