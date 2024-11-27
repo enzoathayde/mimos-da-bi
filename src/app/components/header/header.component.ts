@@ -21,10 +21,6 @@ export class HeaderComponent {
       name: 'Produtos',
       route: '/produtos',
     },
-    {
-      name: 'Contato',
-      route: '/contato',
-    },
   ];
 
   hamburgerMenu = false;
